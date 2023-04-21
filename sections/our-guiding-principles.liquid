@@ -1,0 +1,78 @@
+<section class="our-guiding-principle-section text-center">
+  <div class="container">
+    <div class="row">
+      <h2> {{ section.settings.custom_heading_title }}</h2> 
+      <p class="guiding_principle_text"> {{ section.settings.custom_text_title }}</p>  
+      <div class="our-guiding-center-img text-center">
+        <img class="cstm-with-img" src="{{ section.settings.our_guiding | img_url: 'master' }}" alt="BANNER IMG"> 
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 padding-cstm">
+         <div class="row">
+      {% for block in section.blocks %}       
+      
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <div class="our-guiding-left-colom right-colom"> 
+              <h3> {{ block.settings.custom_text_title1 }}</h3>  
+              <p> {{ block.settings.custom_text_title2}}</p>  
+            </div>
+          </div>
+            {% endfor %}
+        </div>
+      </div>
+     
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+"name": "our-guiding-principles",
+"settings": [
+{
+"id": "custom_heading_title",
+"type": "text",
+"label": "heading"
+},
+{
+"id": "custom_text_title",
+"type": "text",
+"label": "text"
+},
+
+{
+"type": "image_picker",
+"id": "our_guiding",
+"label": "Custom  Image"
+}
+],
+
+"blocks": [
+{
+"type": "select",
+"name": "Add Button",
+"settings": [
+
+{
+"id": "custom_text_title1",
+"type": "text",
+"label": "heading title"
+},
+{
+"id": "custom_text_title2",
+"type": "html",
+"label": "text custom"
+}
+
+]
+}
+],
+
+
+"presets": [
+{
+"name": "our-guiding-principles"
+}
+]
+}
+{% endschema %}

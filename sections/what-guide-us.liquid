@@ -1,0 +1,77 @@
+<section class="what-guide-section">
+  <div class="container">
+    <div class="row">
+      <h2> {{ section.settings.custom_heading_title }}</h2> 
+      {% for block in section.blocks %} 
+
+      
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 padding-cstm">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="what-guide-left-colom">           
+              <img class="cstm-with-img" src="{{ block.settings.bannerImage | img_url: 'master' }}" alt="BANNER IMG"> 
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="what-guide-left-colom right-colom"> 
+              <h3> {{ block.settings.custom_text_title }}</h3>  
+              <p> {{ block.settings.custom_text_title1 }}</p>  
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "WHAT GUIDE-US",
+    "settings": [
+{
+      "id": "custom_heading_title",
+      "type": "text",
+      "label": "heading"
+      }
+    ],
+
+ "blocks": [
+    {
+      "type": "select",
+      "name": "Add Button",
+      "settings": [
+
+ {
+        "type": "image_picker",
+        "id": "bannerImage",
+        "label": "Custom  Image"
+      },	 
+      
+     {
+      "id": "custom_text_title",
+      "type": "text",
+      "label": "text"
+      },
+   {
+      "id": "custom_text_title1",
+      "type": "html",
+      "label": "text1"
+      }
+
+
+
+      ]
+    }
+  ],
+
+
+    "presets": [
+      {
+        "name": "WHAT GUIDE-US"
+      }
+    ]
+  }
+{% endschema %}

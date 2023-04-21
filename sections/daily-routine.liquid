@@ -1,0 +1,132 @@
+{{ 'section-daily-routine.css' | asset_url | stylesheet_tag }}
+
+<section class="main-pet-banner-section daily-routine">
+
+  <div class="container">
+    <img class="gif-image-animation" src="https://cdn.shopify.com/s/files/1/0562/5351/3789/files/spinning.gif?v=1679743347">
+
+    <div class="row align-items-center">
+      <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6 left-colom-css ul-list">
+        	<div class="banner-left-colom-cstms p-0 padding-custom">
+                <h2> {{ section.settings.custom_text_title_one }} </h2>
+
+
+               <div class="inner-cols-main-row-type pt-mt-top">
+              <div class="inner-colom-inner">
+                {{ ' Tastes_Great.svg' | asset_url | img_tag }}
+              </div>
+              <div class="inner-colom-text">
+                <h3 class="h1 product__title" {{ block.shopify_attributes }}>
+
+              {{ section.settings.custom_sub_title1 }}
+                </h3>
+                <p>{{ section.settings.custom_text_title1 }}</p>
+              </div>
+            </div>
+
+            <div class="inner-cols-main-row-type">
+              <div class="inner-colom-inner">
+                 {{ '  Healthy_Made_Easy.svg' | asset_url | img_tag }}
+              </div>
+              <div class="inner-colom-text">
+                <h3 class="h1 product__title" {{ block.shopify_attributes }}>
+
+                   {{ section.settings.custom_sub_title2 }}
+                </h3>
+                <p>{{ section.settings.custom_text_title2 }}</p>
+              </div>
+            </div>
+
+                 <div class="inner-cols-main-row-type">
+              <div class="inner-colom-inner">
+                  {{ ' Formulated_by_Experts.svg' | asset_url | img_tag }}
+              </div>
+              <div class="inner-colom-text">
+                <h3 class="h1 product__title" {{ block.shopify_attributes }}>
+
+                   {{ section.settings.custom_sub_title3 }}
+                </h3>
+                <p>{{ section.settings.custom_text_title3 }}</p>
+              </div>
+            </div>
+            <div class="shop-multivitamin-btn">
+             <a href="{{ section.settings.link0 }}" class="button">{{ section.settings.linktext0 }}</a>
+            </div>
+        </div>
+      </div>
+         <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6  right-colom-css">
+
+<!--            <img class="banner-absolut-gif-img" src="https://cdn.shopify.com/s/files/1/0562/5351/3789/files/7234c78a-spinning-dih.gif?v=1645200015"> -->
+            <img class="cstm-with-img-1" src="{{ section.settings.bannerImage | img_url: 'master' }}" alt="BANNER IMG">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Daily Routine",
+    "settings": [
+{
+      "id": "bannerImage",
+      "type": "image_picker",
+      "label": "Banner Image"
+      },
+
+	 {
+        "id": "custom_text_title_one",
+        "type": "text",
+        "label": "Text box heading1"
+      },
+{
+      "id": "custom_sub_title1",
+      "type": "text",
+      "label": " custom_sub_title1"
+      },
+      {
+      "id": "custom_text_title1",
+      "type": "html",
+      "label": " custom_text_title1"
+      },
+{
+      "id": "custom_sub_title2",
+      "type": "text",
+      "label": " custom_sub_title2"
+      },
+      {
+      "id": "custom_text_title2",
+      "type": "html",
+      "label": " custom_text_title2"
+      },
+ 	{
+      "id": "custom_sub_title3",
+      "type": "text",
+      "label": " custom_sub_title3"
+      },
+      {
+      "id": "custom_text_title3",
+      "type": "html",
+      "label": " custom_text_title3"
+      },
+{
+      "id": "link0",
+      "type": "url",
+      "label": "Button link"
+    },
+    {
+      "id": "linktext0",
+      "type": "text",
+      "label": "Button text"
+    }
+
+
+
+
+    ],
+    "presets": [
+      {
+        "name": "Daily Routine"
+      }
+    ]
+  }
+{% endschema %}

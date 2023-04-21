@@ -1,0 +1,88 @@
+<section class="services-slider">
+  <div class="main-container">
+    <div class="slider slider-main">
+      <div>
+        <img src="https://via.placeholder.com/600x600">
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/600x600/000080">
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/600x600/fff">
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/600x600/sss">
+      </div>
+    </div>
+  </div>
+  <div class="nav-container">
+    <div class="slider-nav">
+      <div>
+        <img src="https://via.placeholder.com/600x600">
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/600x600/000080">
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/600x600/fff">
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/600x600/sss">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<style>
+
+
+.services-slider {
+  display: flex;
+  max-width: 600px;
+}
+
+.nav-container .slick-current img {
+  box-shadow: 0 0 4px 2px rgba(108, 232, 220, 0.9);
+}
+
+slider-main {
+  width: 100%;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.nav-container img {
+  max-height: 135px;
+}
+
+.nav-container .slick-slide {
+  max-height: 135px;
+  margin-bottom: 18px;
+}
+
+.services-slider .slick-track {
+  margin-left: 50px;
+}
+
+@media (min-width: 1000) {
+  .slider-nav {
+    display: none !important;
+  }
+}
+</style>

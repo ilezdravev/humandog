@@ -1,0 +1,73 @@
+.skio-plan-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  border: 0;
+}
+
+.skio-group-container {
+  display: none;
+}
+.skio-group-container--available {
+  display: block;
+}
+
+/* Hide frequency if not selected */
+.skio-group-container:not(.skio-group-container--selected) .skio-frequency {
+  display: none;
+}
+
+.skio-group-input {
+  display: none;
+  cursor: pointer;
+}
+.skio-group-input:checked ~ .skio-group-label .skio-radio-svg--checked {
+  display: block;
+}
+.skio-group-input:checked ~ .skio-group-label .skio-radio-svg--unchecked {
+  display: none;
+}
+.skio-group-input:not(:checked) ~ .skio-group-label .skio-radio-svg--checked {
+  display: none;
+}
+.skio-group-input:not(:checked) ~ .skio-group-label .skio-radio-svg--unchecked {
+  display: block;
+}
+
+.skio-group-label {
+  display: flex;
+  cursor: pointer;
+  color: #022044;
+  font-family: SocialMono-Bold;
+  font-size: 16px;
+}
+
+.skio-radio-svg__container {
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+.skio-frequency {
+  font-family: 'Social-Book';
+}
+
+.skio-frequency-flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.skio-frequency p {
+  font-size: 14px;
+}
+
+.skio-frequency select {
+  text-transform: lowercase;
+}
+
+.skio-text-green {
+  background-color: #C3EFA8;
+  padding: 0 6px;
+  border-radius: 20px;
+}

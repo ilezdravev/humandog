@@ -1,0 +1,133 @@
+<section class="main-himan-grade-et-feed-section cstm-img-wdth"  style="background:#FAFAF8 !important; background-image:url('{{ section.settings.bg-image-top-banner  | img_url: 'master' }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 text-center feed-section-content" style="margin: 0 auto;">
+        <div class="human-grade-et-colom">
+        <h2> {{ section.settings.custom_text_title }}</h2>
+        <h3> {{ section.settings.sub_title }} </h3>
+        <p> {{ section.settings.p_title }}
+           <span class="ancher-cstm-block-div">
+          <a href="https://dog-is-human.myshopify.com/pages/science" class="cstm-ancher-btn"> {{ section.settings.ancher_title }}
+            <img class="img-arrow-cstm-btn" src="https://cdn.shopify.com/s/files/1/0562/5351/3789/files/download-svg.svg?v=1645461823">
+          </a>
+          </span>
+        </p>
+        <div class="secondanimal-colom">
+          <a> <img src="{{ section.settings.dog-img | img_url: 'master' }}" alt=" IMG"></a>
+          <a> <img src="{{ section.settings.dog-img2 | img_url: 'master' }}" alt=" IMG"></a>
+        </div>
+
+
+          <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+              <div class="human-category-colom-row">
+<!--                 <img src="{{ section.settings.category_img | img_url: 'master' }}" alt=" IMG"> -->
+                  {{ ' Essentials_Only.svg' | asset_url | img_tag }}
+                <a>{{ section.settings.category_title }} </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+              <div class="human-category-colom-row">
+<!--                 <img src="{{ section.settings.category_img1 | img_url: 'master' }}" alt=" IMG"> -->
+                 {{ ' Human_Grade.svg' | asset_url | img_tag }}
+                <a>{{ section.settings.category_title1 }} </a>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+              <div class="human-category-colom-row">
+<!--                 <img src="{{ section.settings.category_img2 | img_url: 'master' }}" alt=" IMG"> -->
+                   {{ ' Proven_Effectiveness.svg' | asset_url | img_tag }}
+                <a>{{ section.settings.category_title2 }} </a>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Human-Grade Pet Health",
+    "settings": [
+   {
+  "type": "image_picker",
+  "id": "bg-image-top-banner",
+  "label": "Custom Background Image"
+},
+
+	 {
+        "id": "custom_text_title",
+        "type": "text",
+        "label": "Text box heading"
+      },
+
+	 {
+        "id": "sub_title",
+        "type": "text",
+        "label": "sub_title"
+      },
+	 {
+        "id": "p_title",
+        "type": "text",
+        "label": "p_title"
+      },
+	 {
+        "id": "ancher_title",
+        "type": "text",
+        "label": "url-text"
+      },
+    {
+      "id": "dog-img",
+      "type": "image_picker",
+      "label": "dog-img"
+      },
+    {
+      "id": "dog-img2",
+      "type": "image_picker",
+      "label": "dog-img2"
+      },
+{
+      "id": "category_img",
+      "type": "image_picker",
+      "label": "category_img"
+      },
+	 {
+        "id": "category_title",
+        "type": "text",
+        "label": "category_title"
+      },
+{
+      "id": "category_img1",
+      "type": "image_picker",
+      "label": "category_img1"
+      },
+	 {
+        "id": "category_title1",
+        "type": "text",
+        "label": "category_title1"
+      },
+{
+      "id": "category_img2",
+      "type": "image_picker",
+      "label": "category_img2"
+      },
+	 {
+        "id": "category_title2",
+        "type": "text",
+        "label": "category_title2"
+      }
+
+
+
+    ],
+    "presets": [
+      {
+        "name": "Human-Grade Pet Health"
+      }
+    ]
+  }
+{% endschema %}

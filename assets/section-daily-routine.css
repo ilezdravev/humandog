@@ -1,0 +1,35 @@
+.gif-image-animation {
+  width: 120px;
+  position: absolute;
+  z-index: 2;
+  margin-left: 1024px;
+  top: -5px;
+}
+@media screen and (min-width: 1920px) {
+  .gif-image-animation {
+    top: 12px;
+  }
+}
+@media screen and (max-width: 1205px) {
+  .gif-image-animation {
+    top: 52px;
+    margin-left: 840px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .gif-image-animation {
+    top: 20px;
+    margin-left: 840px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .gif-image-animation {
+    top: 102px;
+    margin-left: 620px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .gif-image-animation {
+    display: none;
+  }
+}/*# sourceMappingURL=section-daily-routine.css.map */

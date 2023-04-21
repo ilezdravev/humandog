@@ -1,0 +1,79 @@
+<section class="our-scientific-section">
+  <div class="container">
+    <div class="row">
+      <h2> {{ section.settings.custom_heading_title }}</h2> 
+      <h3> {{ section.settings.custom_text_title }}</h3> 
+    
+      
+      <div class="main-our-scient-row">
+        <div class="row" style="justify-content: center;">
+          {% for block in section.blocks %} 
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <div class="scientific-left-colom">           
+              <img class="cstm-with-img" src="{{ block.settings.bannerImage | img_url: 'master' }}" alt="BANNER IMG"> 
+              <h4> {{ block.settings.custom_heading_title1 }}</h4>  
+              <p> {{ block.settings.custom_text_title1 }}</p>  
+            </div>
+          </div>
+      
+      {% endfor %}
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "OUR SCIENTIFIC",
+    "settings": [
+{
+      "id": "custom_heading_title",
+      "type": "text",
+      "label": "heading"
+      },
+ {
+      "id": "custom_text_title",
+      "type": "html",
+      "label": "text"
+      }
+    ],
+
+ "blocks": [
+    {
+      "type": "select",
+      "name": "Add Button",
+      "settings": [
+
+ {
+        "type": "image_picker",
+        "id": "bannerImage",
+        "label": "Custom  Image"
+      },	 
+      
+       {
+      "id": "custom_heading_title1",
+      "type": "text",
+      "label": "heading1"
+      },
+
+   {
+      "id": "custom_text_title1",
+      "type": "html",
+      "label": "text1"
+      }
+
+
+
+      ]
+    }
+  ],
+
+
+    "presets": [
+      {
+        "name": "OUR SCIENTIFIC"
+      }
+    ]
+  }
+{% endschema %}

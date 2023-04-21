@@ -1,0 +1,76 @@
+<section class="main-banner-section stickymargin">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 left-colom-css text-content cstms">
+        <div class="row">
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">&nbsp;</div>
+          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+            <div class="home-banner-left-colom bannerheader_width">
+              <h2>
+                {{ section.settings.custom_text_title }}
+                <h2 class="font-change-style"> {{ section.settings.custom_text_title0 }} </h2>
+              </h2>
+              <p>{{ section.settings.custom_text_body }}</p>
+              <p>{{ section.settings.custom_text_body1 }}</p>
+              <a href="{{ section.settings.link }}" class="button">{{ section.settings.linktext }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 image-content right-colom-css">
+        <div class="home-banner-img-right-colom">
+          <img class="cstm-with-img" src="{{ section.settings.bannerImage | img_url: 'master' }}" alt="BANNER IMG">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "MAIN BANNER ",
+    "settings": [
+	 {
+        "id": "custom_text_title",
+        "type": "text",
+        "label": "Text box heading"
+      },
+{
+        "id": "custom_text_title0",
+        "type": "text",
+        "label": "Text box heading1"
+      },
+ 	{
+        "id": "custom_text_body",
+        "type": "html",
+        "label": "Add custom text"
+      },
+{
+        "id": "custom_text_body1",
+        "type": "html",
+        "label": "Add custom text"
+      },
+ {
+      "id": "link",
+      "type": "url",
+      "label": "Button link"
+    },
+    {
+      "id": "linktext",
+      "type": "text",
+      "label": "Button text"
+    },
+
+      {
+      "id": "bannerImage",
+      "type": "image_picker",
+      "label": "Banner Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Home Banner"
+      }
+    ]
+  }
+{% endschema %}

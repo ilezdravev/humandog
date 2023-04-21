@@ -1,0 +1,93 @@
+<section class="main-logo-section">
+
+     <div class="logo-section-row-colom">
+       <ul class="bxslider">
+      <li class="logo-coloms one">
+        <img src="{{ section.settings.bannerImage | img_url: 'master' }}" alt="BANNER IMG">
+
+
+      </li>
+      <li class="logo-coloms two">
+        <img src="{{ section.settings.bannerImage1 | img_url: 'master' }}" alt="BANNER IMG">
+
+      </li>
+      <li class="logo-coloms three">
+        <img src="{{ section.settings.bannerImage2 | img_url: 'master' }}" alt="BANNER IMG">
+
+      </li>
+       <li class="logo-coloms four">
+        <img src="{{ section.settings.bannerImage3 | img_url: 'master' }}" alt="BANNER IMG">
+
+      </li>
+       <li class="logo-coloms five">
+        <img src="{{ section.settings.bannerImage4 | img_url: 'master' }}" alt="BANNER IMG">
+
+      </li>
+         </ul>
+      </div>
+
+
+</section>
+
+{% schema %}
+  {
+    "name": "HOME LOGO SECTION  ",
+    "settings": [
+      {
+      "id": "bannerImage",
+      "type": "image_picker",
+      "label": "Banner Image"
+      },
+  {
+      "id": "bannerImage1",
+      "type": "image_picker",
+      "label": "Banner Image1"
+      },
+  {
+      "id": "bannerImage2",
+      "type": "image_picker",
+      "label": "Banner Image2"
+      },
+  {
+      "id": "bannerImage3",
+      "type": "image_picker",
+      "label": "Banner Image3"
+      },
+   {
+      "id": "bannerImage4",
+      "type": "image_picker",
+      "label": "Banner Image4"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Home LOGO SECTIO"
+      }
+    ]
+  }
+{% endschema %}
+
+
+<style>
+@import "lesshat";
+
+.bx-wrapper {
+  width: 100%;
+}
+
+.bx slider li {
+    margin-top: -16px !important;
+  }
+
+
+
+</style>
+<script>
+$('.bxslider').bxSlider({
+    minSlides: 5,
+    maxSlides: 8,
+    slideMargin: 0,
+    ticker: true,
+    speed: 30000
+});
+</script>

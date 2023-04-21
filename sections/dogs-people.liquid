@@ -1,0 +1,53 @@
+<section class="dogs-people-main-section">
+  <div class="container-fluid">
+    <div class="row">      
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="dogs-people-left-colom">           
+          <img class="cstm-with-img" src="{{ section.settings.bannerImage | img_url: 'master' }}" alt="BANNER IMG"> 
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" style="background:#9DC1F3;min-height: 100%;position: relative;">
+        <div class="dogs-people-left-colom-right-colom">           
+          <h2> {{ section.settings.custom_heading_title }}</h2> 
+           <a href="{{ section.settings.link }}" class="button">{{ section.settings.linktext }}</a>  
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "DOGS PEOPLE SECTION",
+    "settings": [
+{
+      "id": "bannerImage",
+      "type": "image_picker",
+      "label": "custome image"
+      },
+{
+      "id": "custom_heading_title",
+      "type": "text",
+      "label": "heading"
+      },
+{
+      "id": "link",
+      "type": "url",
+      "label": "Button link"
+    },
+    {
+      "id": "linktext",
+      "type": "text",
+      "label": "Button text"
+    }
+    ],
+
+    "presets": [
+      {
+        "name": "DOGS PEOPLE SECTION"
+      }
+    ]
+  }
+{% endschema %}

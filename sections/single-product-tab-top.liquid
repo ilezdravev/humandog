@@ -1,0 +1,95 @@
+<section class="main-himan-grade-et-feed-section"  style="">
+  <div class="container">
+    <div class="row">
+       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4" >
+        <div class="inner-single-tabs">
+          <h3>{{ section.settings.top_heading}}</h3>
+          <p>{{ section.settings.span_text}}</p>
+          <p>{{ section.settings.span_text1}}</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+        <div class="inner-product-innner-tabs human-grade-et-colom">
+            {% for block in section.blocks %} 
+           <div class="accordion-contianer-tabs-cstm-class">
+             <button class="accordion"> 
+             <span class="text-left">{{block.settings.accordion_title }} </span>
+               <span class="text-right">{{block.settings.accordion_title1 }} </span>
+                <h3>{{ block.settings.heading-title1 }}</h3>
+             </button>
+            <div class="panel">
+              <p>{{block.settings.accordion_text}}</p>
+            </div>
+          </div>
+		{% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "single-product-tab",
+    "settings": [
+{
+"id": "top_heading",
+"type": "text",
+"label": "Text  heading"
+},
+{
+"id": "span_text",
+"type": "text",
+"label": "Text"
+},
+{
+"id": "span_text1",
+"type": "text",
+"label": "Text_down"
+}
+],
+ "blocks": [
+    {
+      "type": "select",
+      "name": "Add Button",
+      "settings": [
+{
+"id": "accordion_title",
+"type": "text",
+"label": "accordion_title"
+},
+{
+"id": "accordion_title1",
+"type": "text",
+"label": "accordion_title1"
+},
+{
+"id": "accordion_text",
+"type": "html",
+"label": "accordion_text"
+}
+      ]
+    }
+  ],
+
+    "presets": [
+      {
+        "name": "single-product-tab"
+      }
+    ]
+  }
+{% endschema %}
+
+
+
+
+<script>
+  $(document).ready(function() {
+    $(".accordion").on("click", function() {
+      $(this).toggleClass("active");
+      $(this).next().slideToggle(200);
+    });
+  });
+
+</script>

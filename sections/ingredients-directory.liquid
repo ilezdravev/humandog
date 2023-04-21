@@ -1,0 +1,157 @@
+<section class="main-himan-grade-et-feed-section cstm-class-for-section"  style="background:#FFF3E1 !important; background-image:url('{{ section.settings.bg-image-top-banner  | img_url: 'master' }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-xl-10 text-center" style="margin: 0 auto;">
+        <div class="human-grade-et-colom">
+          <h2> {{ section.settings.custom_text_title }}</h2>
+          <p> {{ section.settings.p_title }}
+          </p>
+          <div class="secondanimal-colom">
+            <a href="#"> <img src="{{ section.settings.dog-img | img_url: 'master' }}" alt=" IMG"></a>
+            <a href="#"> <img src="{{ section.settings.dog-img2 | img_url: 'master' }}" alt=" IMG"></a>
+          </div>
+		  <div class="accordion-contianer-tabs-cstm-class">
+            <button class="accordion"><span class="span_width-main">{{ section.settings.accordion_title }}</span>
+              <span>{{ section.settings.accordion_title1 }}</span>
+            </button>
+            <div class="panel cstm-table-id" style="overflow-x:auto;">
+              <table>
+                <tr>
+                  <th>{{ section.settings.accordion_heading1}}</th>
+                  <th>{{ section.settings.accordion_heading2}}</th>
+                  <th>{{ section.settings.accordion_heading3}}</th>
+                   <th>{{ section.settings.accordion_heading4}}</th>
+                </tr>
+                  {% for block in section.blocks %} 
+                <tr>
+                  <td class="change-font-style">{{ block.settings.accordion_heading5}}</td>
+                  <td>{{ block.settings.accordion_heading6}}</td>
+                  <td>{{ block.settings.accordion_heading7}}</td>
+                  <td>{{ block.settings.accordion_heading8}}</td>
+                </tr>
+                  {% endfor %}
+              </table>
+              
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+"name": "Ingredients Directory",
+"settings": [
+{
+"type": "image_picker",
+"id": "bg-image-top-banner",
+"label": "Custom Background Image"
+},
+
+{
+"id": "custom_text_title",
+"type": "text",
+"label": "Text box heading"
+},
+{
+"id": "p_title",
+"type": "text",
+"label": "p_title"
+},
+
+{
+"id": "dog-img",
+"type": "image_picker",
+"label": "dog-img"
+},
+{
+"id": "dog-img2",
+"type": "image_picker",
+"label": "dog-img2"
+},
+{
+"id": "accordion_title",
+"type": "text",
+"label": "accordion_title"
+},
+{
+"id": "accordion_title1",
+"type": "text",
+"label": "accordion_title"
+},
+{
+"id": "accordion_heading1",
+"type": "html",
+"label": "accordion_text"
+},
+{
+"id": "accordion_heading2",
+"type": "html",
+"label": "accordion_text"
+},
+{
+"id": "accordion_heading3",
+"type": "html",
+"label": "accordion_text"
+},
+{
+"id": "accordion_heading4",
+"type": "html",
+"label": "accordion_text"
+}
+
+],
+ "blocks": [
+    {
+      "type": "select",
+      "name": "Add Button",
+      "settings": [
+
+
+{
+"id": "accordion_heading5",
+"type": "html",
+"label": "accordion_text"
+},
+{
+"id": "accordion_heading6",
+"type": "html",
+"label": "accordion_text"
+},
+{
+"id": "accordion_heading7",
+"type": "html",
+"label": "accordion_text"
+},
+{
+"id": "accordion_heading8",
+"type": "html",
+"label": "accordion_text"
+}
+     
+      ]
+    }
+  ],
+"presets": [
+{
+"name": "Ingredients Directory"
+}
+]
+}
+{% endschema %}
+
+
+<script>
+  $(document).ready(function() {
+    $(".accordion").on("click", function() {
+      $(this).toggleClass("active");
+      $(this).next().slideToggle(200);
+    });
+  });
+
+</script>

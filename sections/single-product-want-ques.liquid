@@ -1,0 +1,74 @@
+<section class="we-want-question-section main-himan-grade-et-feed-section"  style="background:#F6FBFE;">
+  <div class="container">
+    <div class="row">
+       <h3 class="text-center">{{ section.settings.top_heading}}</h3>
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-xl-10" style="margin:0 auto;">
+        <div class="single-product-we-want-question inner-product-innner-tabs  human-grade-et-colom">
+            {% for block in section.blocks %} 
+           <div class="accordion-contianer-tabs-cstm-class">
+             <button class="accordion_one"> 
+             <span class="text-left">{{block.settings.accordion_title }} </span>
+             </button>
+            <div class="panel">
+              <p>{{block.settings.accordion_text}}</p>
+            </div>
+          </div>
+		{% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "single-product-want-ques",
+    "settings": [
+{
+"id": "top_heading",
+"type": "text",
+"label": "Text  heading"
+}
+
+],
+ "blocks": [
+    {
+      "type": "select",
+      "name": "Add Button",
+      "settings": [
+{
+"id": "accordion_title",
+"type": "text",
+"label": "accordion_title"
+},
+
+{
+"id": "accordion_text",
+"type": "html",
+"label": "accordion_text"
+}
+      ]
+    }
+  ],
+
+    "presets": [
+      {
+        "name": "single-product-want-ques"
+      }
+    ]
+  }
+{% endschema %}
+
+
+
+
+<script>
+  $(document).ready(function() {
+    $(".accordion_one").on("click", function() {
+      $(this).toggleClass("active");
+      $(this).next().slideToggle(200);
+    });
+  });
+
+</script>

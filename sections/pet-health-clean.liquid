@@ -1,0 +1,212 @@
+{{ 'section-dog-is-human.css' | asset_url | stylesheet_tag }}
+
+<section class="main-pet-banner-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+          <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6  right-colom-css">
+
+
+          <img class="cstm-with-img-1" src="{{ section.settings.bannerImage | img_url: 'master' }}" alt="BANNER IMG">
+
+
+           {% comment %} <img class="cstm-with-img-1" src="{{ section.settings.bannerImage | img_url: 'master' }}" alt="BANNER IMG"> {% endcomment %}
+      </div>
+
+      <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6 left-colom-css ul-list">
+        	<div class="banner-left-colom-cstms">
+                <h2> {{ section.settings.custom_text_title_one }} </h2>
+               <h2> {{ section.settings.custom_text_title }} </h2>
+              <p class="mt-pt-cols">{{ section.settings.custom_text_body }}</p>
+              <p>{{ section.settings.custom_text_body2 }}</p>
+              <div class="ul-pet-health-ul">
+                <ul>
+                  <li>
+                    <div class="section-svg">
+                      {{ section.settings.linkt }}
+                    </div>
+                    <span class="links font-change-style">{{ section.settings.linktext }} </span>
+                    </li>
+                   <li>
+                    <div class="section-svg" >
+                      {{ section.settings.linkt1 }}
+                    </div>
+                    <span class="links font-change-style">{{ section.settings.linktext1 }}</span>
+                    </li>
+                   <li>
+                    <div class="section-svg" >
+                      {{ section.settings.linkt2 }}
+                    </div>
+                    <span class="links font-change-style">{{ section.settings.linktext2 }}</span>
+                  </li>
+                   <li>
+                    <div class="section-svg" >
+                      {{ section.settings.linkt3 }}
+                    </div>
+                    <span class="links font-change-style">{{ section.settings.linktext3 }}</span>
+                  </li>
+                   <li>
+                    <div class="section-svg" >
+                      {{ section.settings.linkt4 }}
+                    </div>
+                    <span class="links font-change-style">{{ section.settings.linktext4 }}</span>
+                    </li>
+                   <li class="links-cstm-a"><a href="{{ section.settings.link5 }}" class="links"> {{ section.settings.linktext5 }}<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+					</a>   </li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "PET HEALTH CLEAN ",
+    "settings": [
+{
+      "id": "bannerImage",
+      "type": "image_picker",
+      "label": "Banner Image"
+      },
+
+	 {
+        "id": "custom_text_title_one",
+        "type": "text",
+        "label": "Text box heading1"
+      },
+ {
+        "id": "custom_text_title",
+        "type": "text",
+        "label": "Text box heading"
+      },
+ 	{
+        "id": "custom_text_body",
+        "type": "html",
+        "label": "Add custom text"
+      },
+{
+        "id": "custom_text_body2",
+        "type": "html",
+        "label": "Add custom text2"
+      },
+ {
+      "id": "link",
+      "type": "url",
+      "label": "Button link"
+    },
+    {
+      "id": "linktext",
+      "type": "text",
+      "label": "Button text"
+    },
+    {
+      "id": "linkt",
+      "type": "textarea",
+      "label": "SVG"
+    },
+    {
+      "id": "linkimage",
+      "type": "image_picker",
+      "label": "Image"
+    },
+ {
+      "id": "link1",
+      "type": "url",
+      "label": "Button link1"
+    },
+    {
+      "id": "linktext1",
+      "type": "text",
+      "label": "Button text1"
+    },
+    {
+      "id": "linkt1",
+      "type": "textarea",
+      "label": "SVG"
+    },
+    {
+      "id": "linkimage1",
+      "type": "image_picker",
+      "label": "Image"
+    },
+ {
+      "id": "link2",
+      "type": "url",
+      "label": "Button link2"
+    },
+    {
+      "id": "linktext2",
+      "type": "text",
+      "label": "Button text2"
+    },
+    {
+      "id": "linkt2",
+      "type": "textarea",
+      "label": "SVG"
+    },
+    {
+      "id": "linkimage2",
+      "type": "image_picker",
+      "label": "Image"
+    },
+ {
+      "id": "link3",
+      "type": "url",
+      "label": "Button link3"
+    },
+    {
+      "id": "linktext3",
+      "type": "text",
+      "label": "Button text3"
+    },
+    {
+      "id": "linkt3",
+      "type": "textarea",
+      "label": "SVG"
+    },
+    {
+      "id": "linkimage3",
+      "type": "image_picker",
+      "label": "Image"
+    },
+    {
+      "id": "link4",
+      "type": "url",
+      "label": "Button link4"
+    },
+    {
+      "id": "linktext4",
+      "type": "text",
+      "label": "Button text4"
+    },
+    {
+      "id": "linkt4",
+      "type": "textarea",
+      "label": "SVG"
+    },
+    {
+      "id": "linkimage4",
+      "type": "image_picker",
+      "label": "Image"
+    },
+ {
+      "id": "link5",
+      "type": "url",
+      "label": "Button link5"
+    },
+    {
+      "id": "linktext5",
+      "type": "text",
+      "label": "Button text5"
+    }
+
+    ],
+    "presets": [
+      {
+        "name": "PET HEALTH CLEAN"
+      }
+    ]
+  }
+{% endschema %}

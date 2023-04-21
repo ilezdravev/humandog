@@ -1,0 +1,234 @@
+<section class="single-product-foundational-health-section health-dog-new-section cstms">
+  <div class="container">
+<!--     <div class="row-custom"> -->
+        <div class="row">
+      <div class="left-single-img-colom-cstm  dogs-main-section-colo-cstm padding-cstm">
+
+          <div class="left-dog-meet-colom-dev padding-none-mobiles main-css-img-cstm">
+            <div class="product-foundationa">
+              <img class="cstm-with-img" src="{{ section.settings.bannerImage | img_url: 'master' }}" alt="BANNER IMG">
+            </div>
+          </div>
+
+
+            <div class="right-dog-meet-colom-dev product-foundationa-ingo health-dog-text-colom seconds">
+               <div class="product-foundationa-ingo margin_space_right">
+              <h3> {{ section.settings.custom_text_title }}</h3>
+              <h3 class="margin-pt"> {{ section.settings.custom_text_title0 }}</h3>
+
+
+                <p class="dog-show_on_desk">Each jar contains 60 chews, which is up to</p>
+                <p class="dog-show_on_desk2">a two-month supply.</p>
+
+                <p class="dog-show_on_mobile">Each jar contains 60 chews, which is up to a two-month supply.</p>
+
+<!--          <p class="dog-foundation-textwidth"> {{ section.settings.custom_text_title1 }}</p>
+              <p> {{ section.settings.custom_text_title10 }}</p>   -->
+
+              <div class="health-dog-directions-colom">
+              	<h5> {{ section.settings.custom_top_h }}</h5>
+                <p> {{ section.settings.dog_health_info }}</p>
+                <ul>
+                  <li class="smail-text-size-cstm">
+                    <span> {{ section.settings.table_top-h }} </span>
+                    <span> {{ section.settings.table_top-h1 }} </span>
+                  </li>
+                  <li>
+                    <span> {{ section.settings.table_info }} </span>
+                    <span> {{ section.settings.table_info1 }} </span>
+                  </li>
+                   <li>
+                    <span> {{ section.settings.table_info2 }} </span>
+                    <span> {{ section.settings.table_info3 }} </span>
+                  </li>
+                  <li>
+                    <span> {{ section.settings.table_info4 }} </span>
+                    <span> {{ section.settings.table_info5 }} </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+          </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+"name": " SINGLE HEALTH DOG",
+"settings": [
+{
+"type": "image_picker",
+"id": "bannerImage",
+"label": "Custom  Image"
+},
+
+{
+"id": "custom_text_title",
+"type": "text",
+"label": "text"
+},
+{
+"id": "custom_text_title0",
+"type": "text",
+"label": "text-sub-heading"
+},
+{
+"id": "custom_text_title1",
+"type": "html",
+"label": "text1"
+},
+{
+"id": "custom_text_title10",
+"type": "html",
+"label": "text1"
+},
+
+{
+"id": "custom_top_h",
+"type": "text",
+"label": "custom_top_heading"
+},
+
+{
+"id": "dog_health_info",
+"type": "html",
+"label": "dog_health_info"
+},
+
+{
+"id": "table_top-h",
+"type": "text",
+"label": "table_top-heading"
+},
+
+{
+"id": "table_top-h1",
+"type": "html",
+"label": "table_top-heading1"
+},
+{
+"id": "table_info",
+"type": "text",
+"label": "table_info"
+},
+
+{
+"id": "table_info1",
+"type": "html",
+"label": "table_info1"
+},
+{
+"id": "table_info2",
+"type": "text",
+"label": "table_info2"
+},
+
+{
+"id": "table_info3",
+"type": "html",
+"label": "table_info3"
+},
+{
+"id": "table_info4",
+"type": "text",
+"label": "table_info4"
+},
+
+{
+"id": "table_info5",
+"type": "html",
+"label": "table_info5"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+],
+
+
+"presets": [
+{
+"name": " SINGLE HEALTH DOG"
+}
+]
+}
+{% endschema %}
+
+
+
+<style>
+ .health-dog-new-section  .row-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .health-dog-new-section  .left-dog-meet-colom-dev img {
+/*     position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 0;
+    height: 0;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%; */
+    object-fit: cover;
+   height: 525px;
+}
+ .left-dog-meet-colom-dev {
+    position: relative;
+    width: 74%;
+    height: 520px;
+}
+ .health-dog-new-section .product-foundationa {
+    display: block;
+    height: 520px;
+}
+.health-dog-new-section  .container-custom {
+    padding-left: 0;
+}
+.health-dog-new-section .left-single-img-colom-cstm{
+   width:100%;
+  display: flex;
+}
+
+
+  @media screen and (min-width:769px){
+  .product-foundationa-ingo.margin_space_right {
+    margin-left: 55px;
+}
+}
+
+  @media screen and (max-width:1024px){
+  .dog-show_on_desk, .dog-show_on_desk2{
+    display:none !important;
+  }
+}
+@media screen and (min-width:1024px){
+.dog-show_on_mobile{
+  display:none !important;
+}
+}
+
+</style>

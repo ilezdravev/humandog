@@ -1,0 +1,199 @@
+<!-- https://codepen.io/bootstraplily/pen/vRpqZB -->
+<section class="tester_new text-center cstmss">
+<h2 class="main-team-heading">{{ section.settings.main-heading-title }}</h2>
+  <div class="container-fluid">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  data-interval="false">
+      <ol class="carousel-indicators">
+        <li class="one" data-target="#carouselExampleIndicators" data-slide-to="0" ></li>
+        <li  data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+        <li class="two" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-8" style="margin:0 auto;">
+              <p>{{ section.settings.sub-title1 }} </p>
+               <p> <span>"</span>{{ section.settings.sub-title01 }}<span>"</span></p>
+              <h3>{{ section.settings.heading-title1 }}</h3>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <div class="row">
+           <div class="col-lg-8" style="margin:0 auto;">
+           <p> {{ section.settings.sub-title2 }} </p>
+               <p><span>"</span>{{ section.settings.sub-title02 }}<span>"</span></p>
+              <h3>{{ section.settings.heading-title2 }}</h3>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+               <div class="col-lg-8" style="margin:0 auto;">
+       <p>{{ section.settings.sub-title3 }}</p>
+               <p><span>"</span>{{ section.settings.sub-title03 }}<span>"</span> </p>
+              <h3>{{ section.settings.heading-title3 }}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--
+<section class="our-vet-section">
+  <div class="container">
+    <div class="row"> </div>
+    <div class="row">
+      <div class="vet_team owl-carousel owl-theme">
+        {% for block in section.blocks %}
+        <div class="item">
+           <img src="{{ block.settings.bannerImage1 | img_url: 'master' }}" alt="BANNER IMG">
+         </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section> -->
+
+{% schema %}
+  {
+    "name": "single-product-leading",
+    "settings": [
+ {
+      "id": "main-heading-title",
+      "type": "text",
+      "label": "main-heading-title"
+      },
+  {
+      "id": "heading-title1",
+      "type": "html",
+      "label": "heading-title1"
+      },
+  {
+      "id": "sub-title1",
+      "type": "text",
+      "label": "sub-title1"
+      },
+  {
+      "id": "sub-title01",
+      "type": "html",
+      "label": "sub-title01"
+      },
+{
+      "id": "bannerImage1",
+      "type": "image_picker",
+      "label": "Banner Image1"
+      },
+
+ {
+      "id": "heading-title2",
+      "type": "html",
+      "label": "heading-title2"
+      },
+{
+      "id": "sub-title2",
+      "type": "text",
+      "label": "sub-title2"
+      },
+  {
+      "id": "sub-title02",
+      "type": "html",
+      "label": "sub-title02"
+      },
+{
+      "id": "bannerImage2",
+      "type": "image_picker",
+      "label": "Banner Image2"
+      },
+
+ {
+      "id": "heading-title3",
+      "type": "html",
+      "label": "heading-title3"
+      },
+
+ {
+      "id": "sub-title3",
+      "type": "text",
+      "label": "sub-title3"
+      },
+  {
+      "id": "sub-title03",
+      "type": "html",
+      "label": "sub-title03"
+      },
+{
+      "id": "bannerImage3",
+      "type": "image_picker",
+      "label": "Banner Image3"
+      }
+
+
+
+
+ ],
+ "blocks": [
+    {
+      "type": "select",
+      "name": "Add Button",
+      "settings": [
+
+      ]
+    }
+  ],
+
+    "presets": [
+      {
+        "name": "single-product-leading"
+      }
+    ]
+  }
+{% endschema %}
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<style>
+  .tester_new {
+	padding:70px 0 150px;
+}
+
+.tester_new .carousel-item p {
+	color: #666;
+	line-height: 28px;
+	letter-spacing: 1px;
+}
+.tester_new.text-center.cstmss .carousel-inner .carousel-item p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.tester_new .carousel-indicators li {
+	height: 75px;
+	width: 75px;
+	border-radius: 50%;
+
+  	background-image: url(https://cdn.shopify.com/s/files/1/0562/5351/3789/files/Jess_Edmeier.png?v=1646060990);
+	background-position: center;
+	background-size: cover;
+	opacity: 0.4;
+	margin: 0 10px;
+  cursor:pointer;
+}
+.tester_new .carousel-indicators li:nth-child(2) {
+	background-image: url(https://cdn.shopify.com/s/files/1/0562/5351/3789/files/Jess_Edmeier_12.jpg?v=1647534208);
+}
+.tester_new .carousel-indicators li:nth-child(3) {
+	background-image: url(https://cdn.shopify.com/s/files/1/0562/5351/3789/files/Jess_Edmeier_1.jpg?v=1647504000);
+}
+.carousel-indicators {
+	bottom: -90px;
+}
+.tester_new .carousel-indicators .active {
+	opacity: 1;
+}
+</style>

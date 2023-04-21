@@ -1,0 +1,65 @@
+<section class="our-scientific-section meet-our-community-section">
+  <div class="container">
+    <div class="row">
+      <h2> {{ section.settings.custom_heading_title }}</h2>
+      <h3> {{ section.settings.custom_text_title }}</h3>
+
+
+      <div class="main-our-scient-row cstms">
+
+        <div id="insta-feed"></div>
+
+        <div class="row" style="justify-content: center;">
+
+
+
+
+
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "meet-our-community",
+    "settings": [
+{
+      "id": "custom_heading_title",
+      "type": "text",
+      "label": "heading"
+      },
+ {
+      "id": "custom_text_title",
+      "type": "html",
+      "label": "text"
+      }
+    ],
+
+ "blocks": [
+    {
+      "type": "select",
+      "name": "Add Button",
+      "settings": [
+
+ {
+        "type": "image_picker",
+        "id": "bannerImage",
+        "label": "Custom  Image"
+      }
+
+
+
+      ]
+    }
+  ],
+
+
+    "presets": [
+      {
+        "name": "meet-our-community"
+      }
+    ]
+  }
+{% endschema %}

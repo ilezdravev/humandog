@@ -1,0 +1,73 @@
+<section class="main-Instagram-feed-section">
+  <div class="container">
+    <div class="row cstm-colom-row">
+     <h2> {{ section.settings.custom_text_title }}
+       <h2> {{ section.settings.custom_text_title0 }} </h2>
+      </h2>
+    </div>
+    <div class="row">
+
+<div class="testimonial-insta owl-carousel owl-theme">
+
+  {% for block in section.blocks %}
+        <div class="item">
+          <img src="{{ block.settings.bannerImage  | img_url: 'master' }}">
+
+              <p><b>{{ block.settings.custom_text_bold }}</b>
+              {{ block.settings.custom_text_body }} </p>
+            </div>
+   {% endfor %}
+
+          </div>
+
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": " Instagram feed",
+    "settings": [
+	 {
+        "id": "custom_text_title",
+        "type": "text",
+        "label": "Text box heading"
+      },
+	{
+        "id": "custom_text_title0",
+        "type": "text",
+        "label": "Text box heading"
+      }
+
+    ],
+ "blocks": [
+    {
+      "type": "select",
+      "name": "Add Button",
+      "settings": [
+      {
+      "id": "bannerImage",
+      "type": "image_picker",
+      "label": "Banner Image"
+      },
+	{
+        "id": "custom_text_bold",
+        "type": "html",
+        "label": "Add custom text bold"
+      },
+	{
+        "id": "custom_text_body",
+        "type": "html",
+        "label": "Add custom text"
+      }
+      ]
+    }
+  ],
+    "presets": [
+      {
+        "name": "Instagram feed"
+      }
+    ]
+  }
+{% endschema %}

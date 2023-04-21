@@ -1,0 +1,613 @@
+{
+  "current": {
+    "colors_solid_button_labels": "#FFFFFF",
+    "colors_accent_1": "#9dc1f3",
+    "colors_accent_2": "#022044",
+    "colors_text": "#022044",
+    "colors_outline_button_labels": "#022044",
+    "gradient_background_1": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+    "colors_background_2": "#e4edf9",
+    "buttons_radius": 0,
+    "media_border_thickness": 2,
+    "social_facebook_link": "",
+    "social_instagram_link": "",
+    "social_tiktok_link": "",
+    "favicon": "shopify:\/\/shop_images\/favi.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo_1_f.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "large",
+    "checkout_input_background_color_mode": "transparent",
+    "checkout_sidebar_background_color": "#f6fbfe",
+    "checkout_accent_color": "#022044",
+    "checkout_button_color": "#022044",
+    "checkout_error_color": "#022044",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Code INTRO20 for 20% OFF First Month",
+              "color_scheme": "background-1",
+              "link": ""
+            }
+          },
+          "954bb0c5-5566-4f43-801c-a7aab833d87f": {
+            "type": "announcement",
+            "settings": {
+              "text": "30-Day Guarantee & FREE Shipping",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0",
+          "954bb0c5-5566-4f43-801c-a7aab833d87f"
+        ],
+        "settings": {}
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "background-1",
+          "logo": "shopify:\/\/shop_images\/photo6129622483146486081_4b36eaad-4529-425c-8031-bac238123b2e.jpg",
+          "logo_width": 250,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "show_line_separator": true,
+          "enable_sticky_header": true,
+          "margin_bottom": 0
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Shop",
+              "menu": "shop"
+            }
+          },
+          "footer-1": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Company",
+              "menu": "company"
+            }
+          },
+          "footer-2": {
+            "type": "text",
+            "settings": {
+              "heading": "Follow Us",
+              "subtext": "<ul class=\"footer__list-social list-unstyled list-social\" role=\"list\">\n<li class=\"list-social__item insta-css\">\n                <a target=\"_blank\" href=\"https:\/\/www.instagram.com\/dogishuman\/\" class=\"link list-social__link\"><svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-instagram\" viewbox=\"0 0 18 18\">\n  <path fill=\"currentColor\" d=\"M8.77 1.58c2.34 0 2.62.01 3.54.05.86.04 1.32.18 1.63.3.41.17.7.35 1.01.66.3.3.5.6.65 1 .12.32.27.78.3 1.64.05.92.06 1.2.06 3.54s-.01 2.62-.05 3.54a4.79 4.79 0 01-.3 1.63c-.17.41-.35.7-.66 1.01-.3.3-.6.5-1.01.66-.31.12-.77.26-1.63.3-.92.04-1.2.05-3.54.05s-2.62 0-3.55-.05a4.79 4.79 0 01-1.62-.3c-.42-.16-.7-.35-1.01-.66-.31-.3-.5-.6-.66-1a4.87 4.87 0 01-.3-1.64c-.04-.92-.05-1.2-.05-3.54s0-2.62.05-3.54c.04-.86.18-1.32.3-1.63.16-.41.35-.7.66-1.01.3-.3.6-.5 1-.65.32-.12.78-.27 1.63-.3.93-.05 1.2-.06 3.55-.06zm0-1.58C6.39 0 6.09.01 5.15.05c-.93.04-1.57.2-2.13.4-.57.23-1.06.54-1.55 1.02C1 1.96.7 2.45.46 3.02c-.22.56-.37 1.2-.4 2.13C0 6.1 0 6.4 0 8.77s.01 2.68.05 3.61c.04.94.2 1.57.4 2.13.23.58.54 1.07 1.02 1.56.49.48.98.78 1.55 1.01.56.22 1.2.37 2.13.4.94.05 1.24.06 3.62.06 2.39 0 2.68-.01 3.62-.05.93-.04 1.57-.2 2.13-.41a4.27 4.27 0 001.55-1.01c.49-.49.79-.98 1.01-1.56.22-.55.37-1.19.41-2.13.04-.93.05-1.23.05-3.61 0-2.39 0-2.68-.05-3.62a6.47 6.47 0 00-.4-2.13 4.27 4.27 0 00-1.02-1.55A4.35 4.35 0 0014.52.46a6.43 6.43 0 00-2.13-.41A69 69 0 008.77 0z\"><\/path>\n  <path fill=\"currentColor\" d=\"M8.8 4a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 7.43a2.92 2.92 0 110-5.85 2.92 2.92 0 010 5.85zM13.43 5a1.05 1.05 0 100-2.1 1.05 1.05 0 000 2.1z\">\n<\/path><\/svg>\n<span class=\"visually-hidden\">Instagram<\/span>\n                <\/a>\n              <\/li>\n<li class=\"list-social__item\">\n                <a target=\"_blank\" href=\"https:\/\/www.tiktok.com\/@dogishuman\" class=\"link list-social__link\"><svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-tiktok\" width=\"16\" height=\"18\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n  <path d=\"M8.02 0H11s-.17 3.82 4.13 4.1v2.95s-2.3.14-4.13-1.26l.03 6.1a5.52 5.52 0 11-5.51-5.52h.77V9.4a2.5 2.5 0 101.76 2.4L8.02 0z\" fill=\"currentColor\">\n<\/path><\/svg>\n<span class=\"visually-hidden\">TikTok<\/span>\n                <\/a>\n              <\/li>\n\t\t\t  <li class=\"list-social__item\">\n\t\t\t<a target=\"_blank\" href=\"https:\/\/www.facebook.com\/dogishuman\" class=\"link list-social__link\"><svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-facebook\" viewbox=\"0 0 18 18\">\n<path d=\"M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z\"><\/path>\n<\/svg>\n<span class=\"visually-hidden\">Facebook<\/span>\n\t\t\t<\/a>\n\t\t  <\/li>\n\n<\/ul>\n<p class=\"dogisfor\">DOG IS FOREVER™<\/p>\n<p class=\"made-with\"> Made with  \n<span> <svg width=\"15\" height=\"15\" viewbox=\"0 0 15 15\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M8.5 13.3437L7.59375 12.5187C4.375 9.6 2.25 7.66875 2.25 5.3125C2.25 3.38125 3.7625 1.875 5.6875 1.875C6.775 1.875 7.81875 2.38125 8.5 3.175C9.18125 2.38125 10.225 1.875 11.3125 1.875C13.2375 1.875 14.75 3.38125 14.75 5.3125C14.75 7.66875 12.625 9.6 9.40625 12.5187L8.5 13.3437Z\" fill=\"#599FFF\"><\/path>\n<\/svg>\n <\/span>\n     in Vermont <\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1",
+          "footer-2"
+        ],
+        "settings": {
+          "footer_logo": "shopify:\/\/shop_images\/logo_2222.png",
+          "footer_text": "<h2 class=\"footer-block__heading\">Customer Care<\/h2>\n\n<p><a href=\"mailto:hello@dogishuman.com\">hello@dogishuman.com<\/a><\/p>\n<p>Text : <a href=\"sms:1-646-798-5807\">(646) 798-5807<\/a><\/p>",
+          "color_scheme": "background-1",
+          "newsletter_enable": false,
+          "newsletter_heading": "",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": true,
+          "margin_top": 48,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {}
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {}
+      },
+      "about-us-banner": {
+        "type": "about-us-banner",
+        "settings": {
+          "bg-image-banner-mobile": "shopify:\/\/shop_images\/Dog_is_Human_Selects_DKS_014_copy_2.png",
+          "bg-image-banner": "shopify:\/\/shop_images\/Dog_is_Human_Selects_DKS_014.jpg",
+          "custom_text_title": "We are",
+          "custom_text_title1": "Dog is Human."
+        }
+      },
+      "health-first": {
+        "type": "health-first",
+        "settings": {
+          "custom_heading_title_italic": "Health First.",
+          "custom_heading_title": "Everything Second.",
+          "bannerImage": "shopify:\/\/shop_images\/web_Dog_is_Human_r1_DFS_1037_1.jpg",
+          "custom_text_title": "Stare into your dog’s eyes — like us, you know there is a world of compassion, emotion, and thought beyond the barking.",
+          "custom_text_title1": "We believe Dog is Human. Thus, we’re on a mission to empower dogs to live their healthiest lives by raising the standard of pet health."
+        }
+      },
+      "what-guide-us": {
+        "type": "what-guide-us",
+        "blocks": {
+          "1de53fa2-20a1-4081-8d14-d28b27268796": {
+            "type": "select",
+            "settings": {
+              "bannerImage": "shopify:\/\/shop_images\/dog.png",
+              "custom_text_title": "Dog Is Human",
+              "custom_text_title1": "We believe Dog is Human. That's why we are making pet health human-grade. Honestly, dogs are probably better than humans."
+            }
+          },
+          "bed44b6b-63b1-4fd0-9517-2fa58eb9078d": {
+            "type": "select",
+            "settings": {
+              "bannerImage": "shopify:\/\/shop_images\/DIH_Straight_On_Shot_3_Vet_Reco_1.png",
+              "custom_text_title": "Pet Health is a Science",
+              "custom_text_title1": "We put the effectiveness of our product above all, and that starts with a rigorous formulation and development process led by leading veterinarians and doctors (yes, human doctors). We’re all about translating the same caliber of care in human science to the pet space."
+            }
+          },
+          "845b8198-8947-4896-90ad-f457b0327b80": {
+            "type": "select",
+            "settings": {
+              "bannerImage": "shopify:\/\/shop_images\/Remi_7-30-21-9_1.png",
+              "custom_text_title": "Everyone Smiles",
+              "custom_text_title1": "We’re howling, snazzy, and super extra dog lovers. Dogs bring us happiness so we’re all about bringing big smiles to our dogs and you, the amazing parent! Every dog deserves the happiest life and that paw-ty starts with health."
+            }
+          }
+        },
+        "block_order": [
+          "1de53fa2-20a1-4081-8d14-d28b27268796",
+          "bed44b6b-63b1-4fd0-9517-2fa58eb9078d",
+          "845b8198-8947-4896-90ad-f457b0327b80"
+        ],
+        "settings": {
+          "custom_heading_title": "What Guides Us"
+        }
+      },
+      "our-scientific": {
+        "type": "our-scientific",
+        "blocks": {
+          "d3d5e56d-37a0-45b0-93ad-b7eb3d321a50": {
+            "type": "select",
+            "settings": {
+              "bannerImage": "shopify:\/\/shop_images\/Jess_Edmeier.png",
+              "custom_heading_title1": "Dr. Jessica Edmeier, DVM",
+              "custom_text_title1": "Veterinary Advisor"
+            }
+          },
+          "e5a7af6e-506e-4a94-8856-04d5980cb93a": {
+            "type": "select",
+            "settings": {
+              "bannerImage": "shopify:\/\/shop_images\/Christman_New-min.webp",
+              "custom_heading_title1": "Dr. Adam Christman, DVM",
+              "custom_text_title1": "Lead Veterinary Advisor"
+            }
+          },
+          "a30e1851-4e0c-4ff3-bafa-6c292fda0f7e": {
+            "type": "select",
+            "settings": {
+              "bannerImage": "shopify:\/\/shop_images\/image_5.png",
+              "custom_heading_title1": "Dr. Sydney Pokard, DVM",
+              "custom_text_title1": "Veterinary Advisor"
+            }
+          },
+          "c0303c31-b598-4ac6-8349-fd2fbc129d14": {
+            "type": "select",
+            "settings": {
+              "bannerImage": "shopify:\/\/shop_images\/image_6.png",
+              "custom_heading_title1": "Dr. Pradeep Mally, MD",
+              "custom_text_title1": "Neonatologist | Scientific Advisor"
+            }
+          },
+          "4974709a-f318-4dab-bef4-9d0d992bd11c": {
+            "type": "select",
+            "settings": {
+              "bannerImage": "shopify:\/\/shop_images\/Frame_24.png",
+              "custom_heading_title1": "Dr. Peter Chen, PHD",
+              "custom_text_title1": "Animal Science Research Advisor"
+            }
+          }
+        },
+        "block_order": [
+          "d3d5e56d-37a0-45b0-93ad-b7eb3d321a50",
+          "e5a7af6e-506e-4a94-8856-04d5980cb93a",
+          "a30e1851-4e0c-4ff3-bafa-6c292fda0f7e",
+          "c0303c31-b598-4ac6-8349-fd2fbc129d14",
+          "4974709a-f318-4dab-bef4-9d0d992bd11c"
+        ],
+        "settings": {
+          "custom_heading_title": "Our Scientific Board Members",
+          "custom_text_title": "Our veterinarians, animal nutritionists, and researchers are the core of our product innovations in pet health."
+        }
+      },
+      "meet-our-community": {
+        "type": "meet-our-community",
+        "blocks": {
+          "039c2b73-30d2-487b-93d5-f09ef7cc2b53": {
+            "type": "select",
+            "settings": {
+              "bannerImage": "shopify:\/\/shop_images\/Rectangle_32.png"
+            }
+          },
+          "f3dd45dc-f04f-4144-b758-e154751f6ae6": {
+            "type": "select",
+            "settings": {
+              "bannerImage": "shopify:\/\/shop_images\/Rectangle_32.png"
+            }
+          },
+          "655516a2-b815-44cf-aef0-bb7654df17f0": {
+            "type": "select",
+            "settings": {
+              "bannerImage": "shopify:\/\/shop_images\/Rectangle_32.png"
+            }
+          },
+          "90ddc23a-68d9-4845-a2d1-6619eff04a3d": {
+            "type": "select",
+            "settings": {
+              "bannerImage": "shopify:\/\/shop_images\/Rectangle_32.png"
+            }
+          }
+        },
+        "block_order": [
+          "039c2b73-30d2-487b-93d5-f09ef7cc2b53",
+          "f3dd45dc-f04f-4144-b758-e154751f6ae6",
+          "655516a2-b815-44cf-aef0-bb7654df17f0",
+          "90ddc23a-68d9-4845-a2d1-6619eff04a3d"
+        ],
+        "settings": {
+          "custom_heading_title": "The Human Dogs: Meet Our Community",
+          "custom_text_title": "Join the family of snazzy dog pals that believes #DogisHuman"
+        }
+      },
+      "dogs-people": {
+        "type": "dogs-people",
+        "settings": {
+          "bannerImage": "shopify:\/\/shop_images\/Dog_is_Human_Selects_DKS_003_1.png",
+          "custom_heading_title": "Dogs > People",
+          "link": "shopify:\/\/products\/multivitamin",
+          "linktext": "Shop Multivitamin"
+        }
+      },
+      "services-banner": {
+        "type": "services-banner",
+        "settings": {
+          "bg-image-banner": "shopify:\/\/shop_images\/Untitled_design_8_1.png",
+          "custom_text_title": "Effective Pet Health",
+          "custom_text_title1": "is Built on Science"
+        }
+      },
+      "our-guiding-principles": {
+        "type": "our-guiding-principles",
+        "blocks": {
+          "eecd9b55-a8f3-4f6d-8cc5-240291981e61": {
+            "type": "select",
+            "settings": {
+              "custom_text_title1": "Human-Grade",
+              "custom_text_title2": "We believe dogs deserve the same level of care we give ourselves. Only human-grade ingredients make the cut for our products — the same quality you’d buy for yourself at the store."
+            }
+          },
+          "8c35e006-9af5-48bc-9605-c2c52dff9f68": {
+            "type": "select",
+            "settings": {
+              "custom_text_title1": "Essentials Only",
+              "custom_text_title2": "Everything your dog needs, without the things they don’t. Every ingredient is selected to serve a specific purpose. No cheap fillers, artificial flavors, and preservatives."
+            }
+          },
+          "3b71db0e-7182-473e-aa58-9d77f478bf96": {
+            "type": "select",
+            "settings": {
+              "custom_text_title1": "Proven Effective",
+              "custom_text_title2": "Backed and formulated by a team of leading veterinarians and researchers, every active ingredient is clinically-proven to improve specific health functions for dogs."
+            }
+          }
+        },
+        "block_order": [
+          "eecd9b55-a8f3-4f6d-8cc5-240291981e61",
+          "8c35e006-9af5-48bc-9605-c2c52dff9f68",
+          "3b71db0e-7182-473e-aa58-9d77f478bf96"
+        ],
+        "settings": {
+          "custom_heading_title": "Our Guiding Principles",
+          "custom_text_title": "Precise formulations begin with clear parameters.",
+          "our_guiding": "shopify:\/\/shop_images\/New_Project_17_1.png"
+        }
+      },
+      "ingredients-directory": {
+        "type": "ingredients-directory",
+        "blocks": {
+          "1430a061-278e-47c3-8ed7-525c0fd73c5a": {
+            "type": "select",
+            "settings": {
+              "accordion_heading5": "​​Glucosamine HCl",
+              "accordion_heading6": "Natural Compound",
+              "accordion_heading7": "Assists in joint lubrication and helps maintain healthy cartilage.",
+              "accordion_heading8": "“Glucosamine and Chondroitin Use in Canines for Osteoarthritis: A Review.” Open Veterinary Journal, 2017"
+            }
+          },
+          "98f66f2d-5b9f-40b8-8914-e2e21a738bb5": {
+            "type": "select",
+            "settings": {
+              "accordion_heading5": "Methylsulfonylmethane (MSM)",
+              "accordion_heading6": "Natural Compound",
+              "accordion_heading7": "Reduces inflammation and stiffness to aid hip &amp; joint issues.",
+              "accordion_heading8": "“Effects of Methylsulfonylmethane (MSM) on Exercise-Induced Oxidative Stress, Muscle Damage, and Pain Following a Half-Marathon: A Double-Blind, Randomized, Placebo-Controlled Trial.” Journal of the International Society of Sports Nutrition, 21 July 2017"
+            }
+          },
+          "9e49383d-efd9-4dfe-9fd0-b9768065931b": {
+            "type": "select",
+            "settings": {
+              "accordion_heading5": "Microorganisms\nDDS-1 (Lactobacillus acidophilus)\nProDURA (Bacillus coagulans)\nEnterococcus faecium",
+              "accordion_heading6": "Probiotic",
+              "accordion_heading7": "Fosters a healthy microbiome that assists with digestion.",
+              "accordion_heading8": "“Lactobacillus Acidophilus Metabolizes Dietary Plant Glucosides and Externalizes Their Bioactive Phytochemicals.” MBio"
+            }
+          },
+          "9d747959-032b-4c81-a43c-5ecabeb645e5": {
+            "type": "select",
+            "settings": {
+              "accordion_heading5": "Wild Alaskan Salmon Oil",
+              "accordion_heading6": "Fat",
+              "accordion_heading7": "Omega-3 and DHA leads to healthier skin, a shinier coat, and less itching.",
+              "accordion_heading8": "“Health Benefits of Docosahexaenoic Acid (DHA).” Pharmacological Research"
+            }
+          },
+          "cc764a91-d2c0-4411-9ccd-2d78288b208b": {
+            "type": "select",
+            "settings": {
+              "accordion_heading5": "Vitamin A",
+              "accordion_heading6": "Vitamin",
+              "accordion_heading7": "Heightens immune response and mucus levels.",
+              "accordion_heading8": "“Role of Vitamin A in the Immune System.” Journal of Clinical Medicine"
+            }
+          },
+          "175d6151-e5ef-4595-b9dd-05982fc6528d": {
+            "type": "select",
+            "settings": {
+              "accordion_heading5": "CoQ10",
+              "accordion_heading6": "Coenzyme",
+              "accordion_heading7": "Supports a healthy heart and reduces inflammation.",
+              "accordion_heading8": "“Coenzyme Q10 Supplementation in Fibrosis and Aging.” Advances in Experimental Medicine and Biology"
+            }
+          },
+          "67dc63ac-c514-472b-89c3-e54b5737768e": {
+            "type": "select",
+            "settings": {
+              "accordion_heading5": "Natural Vitamin E",
+              "accordion_heading6": "Vitamin",
+              "accordion_heading7": "Provides defense against oxidative damage and free radicals.",
+              "accordion_heading8": "“Free Radical Protection: Why Vitamin E, Not Vitamin C, Beta-Carotene or Glutathione?” Ciba Foundation Symposium"
+            }
+          },
+          "ac37aa96-777e-406a-8123-55743ace8d87": {
+            "type": "select",
+            "settings": {
+              "accordion_heading5": "Riboflavin (Vitamin B2)",
+              "accordion_heading6": "Vitamin",
+              "accordion_heading7": "Supports DNA growth and repair and reduces signs of aging.",
+              "accordion_heading8": "“Riboflavin: The Health Benefits of a Forgotten Natural Vitamin.” International Journal of Molecular Sciences"
+            }
+          },
+          "4e71b350-0e6d-490c-84ff-e9831eb2fa19": {
+            "type": "select",
+            "settings": {
+              "accordion_heading5": "Pyridoxine (Vitamin B6)",
+              "accordion_heading6": "Vitamin",
+              "accordion_heading7": "Assists in red blood cell production and helps break down amino acids and carbohydrates.",
+              "accordion_heading8": "“Vitamin B6 Enzymes Participating in Selenium Amino Acid Metabolism.” BioFactors"
+            }
+          },
+          "3bf81d1b-8876-4252-8dd7-0f17dd3227e6": {
+            "type": "select",
+            "settings": {
+              "accordion_heading5": "Folic Acid (Vitamin B9)",
+              "accordion_heading6": "Vitamin",
+              "accordion_heading7": "Assists in DNA synthesis, red blood cell and nucleic acid production.",
+              "accordion_heading8": "“Folic Acid.” Japanese Journal of Clinical Medicine"
+            }
+          },
+          "4b4bc92c-66a0-46df-be1a-851440e3b5f3": {
+            "type": "select",
+            "settings": {
+              "accordion_heading5": "Methylcobalamin (Vitamin B12)",
+              "accordion_heading6": "Vitamin",
+              "accordion_heading7": "Boosts energy production in cells and helps break down macronutrients.",
+              "accordion_heading8": "“Vitamin B12 in Health and Disease.” Nutrients"
+            }
+          },
+          "bb3d37f7-0cad-4652-8484-012d80f216d4": {
+            "type": "select",
+            "settings": {
+              "accordion_heading5": "Vitamin D3",
+              "accordion_heading6": "Vitamin",
+              "accordion_heading7": "Maintains strong bones and joints.",
+              "accordion_heading8": "“Bone Microstructure in Response to Vitamin D3 Supplementation: A Randomized Placebo-Controlled Trial.” Calcified Tissue International"
+            }
+          }
+        },
+        "block_order": [
+          "1430a061-278e-47c3-8ed7-525c0fd73c5a",
+          "98f66f2d-5b9f-40b8-8914-e2e21a738bb5",
+          "9e49383d-efd9-4dfe-9fd0-b9768065931b",
+          "9d747959-032b-4c81-a43c-5ecabeb645e5",
+          "cc764a91-d2c0-4411-9ccd-2d78288b208b",
+          "175d6151-e5ef-4595-b9dd-05982fc6528d",
+          "67dc63ac-c514-472b-89c3-e54b5737768e",
+          "ac37aa96-777e-406a-8123-55743ace8d87",
+          "4e71b350-0e6d-490c-84ff-e9831eb2fa19",
+          "3bf81d1b-8876-4252-8dd7-0f17dd3227e6",
+          "4b4bc92c-66a0-46df-be1a-851440e3b5f3",
+          "bb3d37f7-0cad-4652-8484-012d80f216d4"
+        ],
+        "settings": {
+          "custom_text_title": "Ingredients Directory",
+          "p_title": "Dive deeper and see why each clinically-backed ingredient matters.",
+          "dog-img": "shopify:\/\/shop_images\/Untitled_design_7_1.png",
+          "dog-img2": "shopify:\/\/shop_images\/Mask_Group0.png",
+          "accordion_title": "",
+          "accordion_title1": "The Complete List",
+          "accordion_heading1": "Ingredient",
+          "accordion_heading2": "Type",
+          "accordion_heading3": "Purpose",
+          "accordion_heading4": "Supporting Study"
+        }
+      },
+      "our-process": {
+        "type": "our-process",
+        "blocks": {
+          "fa40691b-bd00-4c40-a899-639b1dbd9d3d": {
+            "type": "select",
+            "settings": {}
+          },
+          "38725ad9-747b-4f0f-92f5-c0a9780cbbab": {
+            "type": "select",
+            "settings": {}
+          },
+          "6cf8a21f-59ba-4d5f-8480-d8e1f1ed2f7c": {
+            "type": "select",
+            "settings": {}
+          },
+          "e91d525a-d248-4386-b915-141a3f342023": {
+            "type": "select",
+            "settings": {}
+          }
+        },
+        "block_order": [
+          "fa40691b-bd00-4c40-a899-639b1dbd9d3d",
+          "38725ad9-747b-4f0f-92f5-c0a9780cbbab",
+          "6cf8a21f-59ba-4d5f-8480-d8e1f1ed2f7c",
+          "e91d525a-d248-4386-b915-141a3f342023"
+        ],
+        "settings": {
+          "custom_heading_title": "Our Process",
+          "custom_text_title": "We believe quality is rooted in precision. Thus, our team puts every step of the way under the",
+          "custom_text_title0": "microscope before the product gets you.",
+          "custom_text_title2": "Formulation Built On Science",
+          "custom_text_title3": "In pet health, we make sure science comes first. Our leading veterinarians focus on leveraging the latest research and studies to formulate products that support effective long-term health.",
+          "custom_text_title4": "World Class Manufacturing (In Vermont)",
+          "custom_text_title5": "We manufacture our proprietary formulas at an SQF-certified, National Animal Supplement Council-preferred facility in Vermont, adhering to all FDA cGMPs and Standard Operating Procedures.",
+          "custom_text_title6": "Extensive Testing",
+          "custom_text_title7": "Every batch of our products undergo multiple safety, quality, and potency tests before they arrive at your doorstep. We are constantly iterating and improving our supplements to ensure optimal efficacy and palatability.",
+          "custom_text_title8": "Product Safety",
+          "custom_text_title9": "We take the extra steps to thoroughly audit every aspect of our manufacturing and fulfillment processes to ensure the product we make is the product you get in peak condition. Have a question? Shoot us an email at hello@dogishuman.com!"
+        }
+      },
+      "pet-health-is-a-science": {
+        "type": "pet-health-is-a-science",
+        "settings": {
+          "bannerImage": "shopify:\/\/shop_images\/Back_of_Jar.png",
+          "custom_heading_title": "Pet Health is a Science.",
+          "link": "shopify:\/\/products\/multivitamin",
+          "linktext": "Shop Multivitamin"
+        }
+      },
+      "the-science": {
+        "type": "the-science",
+        "settings": {
+          "bg-image-banner-mobile": "shopify:\/\/shop_images\/Header_Image.png",
+          "bg-image-banner": "shopify:\/\/shop_images\/Untitled_design_8_1.png",
+          "custom_text_title": "Effective",
+          "custom_text_title_e": "Pet Health",
+          "custom_text_title1": "is Built on Science"
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "16017602894386113438": {
+        "type": "shopify:\/\/apps\/junip-product-reviews-ugc\/blocks\/junip-store-key\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+        "disabled": false,
+        "settings": {}
+      },
+      "6707720970142525307": {
+        "type": "shopify:\/\/apps\/wowcart-slide-cart-drawer\/blocks\/app-embed\/4937864d-0d20-45b2-9969-e04d09531787",
+        "disabled": false,
+        "settings": {}
+      },
+      "10605408327587305396": {
+        "type": "shopify:\/\/apps\/easygift-auto-add-to-cart\/blocks\/app-embed\/0f7d4f74-1e89-4820-aec4-6564d7e535d2",
+        "disabled": false,
+        "settings": {
+          "version": "v3"
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "color_scheme": "background-1"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {}
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_width": 90
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "footer-1": {
+              "type": "link_list",
+              "settings": {
+                "heading": "Info"
+              }
+            },
+            "footer-2": {
+              "type": "text",
+              "settings": {
+                "heading": "Our mission"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_social": true,
+            "enable_country_selector": false,
+            "enable_language_selector": false,
+            "margin_top": 48
+          }
+        },
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {}
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {}
+        }
+      }
+    }
+  }
+}

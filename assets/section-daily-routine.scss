@@ -1,0 +1,32 @@
+.gif-image-animation {
+    width: 120px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 1024px;
+    top: -5px;
+
+    @media screen and (min-width: 1920px) {
+        top: 12px;
+    }
+
+    @media screen and (max-width: 1205px) {
+        top: 52px;
+        margin-left: 840px;
+    }
+
+
+
+    @media screen and (max-width: 1000px) {
+        top: 20px;
+        margin-left: 840px;
+    }
+
+    @media screen and (max-width: 991px) {
+        top: 102px;
+        margin-left: 620px;
+    }
+
+    @media screen and ( max-width: 750px ) {
+        display: none;
+    }
+}

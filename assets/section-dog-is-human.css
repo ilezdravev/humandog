@@ -1,0 +1,117 @@
+.ul-pet-health-ul {
+  margin-left: 20px;
+  margin-right: 66px;
+}
+@media screen and (max-width: 500px) {
+  .ul-pet-health-ul {
+    padding-bottom: 14px;
+  }
+}
+.ul-pet-health-ul span {
+  font-family: MessinaSerifWeb-RegularItalic;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+}
+@media screen and (max-width: 500px) {
+  .ul-pet-health-ul span {
+    font-size: 14px;
+  }
+}
+.ul-pet-health-ul ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 12px 0 0;
+}
+.ul-pet-health-ul li {
+  background-color: #E9F2FF;
+  padding-top: 19px;
+  padding-bottom: 21px;
+  margin-top: 26px;
+  width: 170px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.ul-pet-health-ul li.links-cstm-a {
+  background-color: transparent;
+}
+.ul-pet-health-ul li.links-cstm-a a {
+  line-height: 2px;
+  color: #000 !important;
+  border-bottom: 1px solid #000;
+  font-size: 16px;
+  font-family: SocialExtended-Medium;
+}
+@media screen and (max-width: 500px) {
+  .ul-pet-health-ul li.links-cstm-a a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .ul-pet-health-ul li {
+    width: 136px;
+    height: 47px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ul-pet-health-ul li {
+    width: 136px;
+    height: 47px;
+  }
+}
+.ul-pet-health-ul .section-svg {
+  position: absolute;
+  margin-top: -53px;
+  margin-left: -169px;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .ul-pet-health-ul .section-svg {
+    margin-top: -43px;
+    margin-left: -136px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .ul-pet-health-ul .section-svg {
+    margin-top: -49px;
+    margin-left: -156px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .ul-pet-health-ul .section-svg {
+    margin-top: -49px;
+    margin-left: -140px;
+  }
+}
+.ul-pet-health-ul .section-svg svg {
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+.ul-pet-health-ul .links {
+  z-index: 1s;
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .ul-pet-health-ul {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ul-pet-health-ul {
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+}/*# sourceMappingURL=section-dog-is-human.css.map */

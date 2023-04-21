@@ -1,0 +1,65 @@
+<section class="main-about-section desktop-show-only-about-banner"  style="background-image:url('{{ section.settings.bg-image-banner  | img_url: 'master' }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6  text-left">
+        	<div class="about-banner-left-colom">
+              <h2> {{ section.settings.custom_text_title }} 
+                <h2>  {{ section.settings.custom_text_title1 }}</h2> 
+                <!--<img class="cstm-with-img" src="{{ section.settings.bannerImage | img_url: 'master' }}" alt="BANNER IMG"> -->
+              </h2>           
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="main-about-section mobile-show-only-about-banner"  style="display:none; background-image:url('{{ section.settings.bg-image-banner-mobile  | img_url: 'master' }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6  text-left">
+        	<div class="about-banner-left-colom">
+              <h2> {{ section.settings.custom_text_title }} 
+                <h2>  {{ section.settings.custom_text_title1 }}</h2> 
+                <!--<img class="cstm-with-img" src="{{ section.settings.bannerImage | img_url: 'master' }}" alt="BANNER IMG"> -->
+              </h2>           
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+{% schema %}
+  {
+    "name": "ABOUT US Banner ",
+    "settings": [
+ {
+        "type": "image_picker",
+        "id": "bg-image-banner-mobile",
+        "label": "MOBILE-Custom Background Image"
+      },
+ {
+        "type": "image_picker",
+        "id": "bg-image-banner",
+        "label": "Custom Background Image"
+      },
+	 
+      {
+      "id": "custom_text_title",
+      "type": "text",
+      "label": "heading"
+      },
+     {
+      "id": "custom_text_title1",
+      "type": "text",
+      "label": "heading1"
+      }
+    ],
+    "presets": [
+      {
+        "name": "ABOUT US Banner"
+      }
+    ]
+  }
+{% endschema %}

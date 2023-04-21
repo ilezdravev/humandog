@@ -1,0 +1,175 @@
+<section class="single-product-foundational-health-section">
+  <div class="container">
+    <div class="row-custom">
+          <div class="left-single-img-colom-cstm margin_space">
+            <div class="product-foundationa-ingo">
+              <h3> {{ section.settings.custom_text_title }}</h3>
+              <h3> {{ section.settings.custom_text_title0 }}</h3>
+              <p> {{ section.settings.custom_text_title1 }}</p>
+              <ul>
+                <li>
+                  <b>{{ section.settings.ul_heading }}</b>
+                  <span>{{ section.settings.ul_sub_heading }}</span>
+                </li>
+                <li>
+                  <b>{{ section.settings.ul_heading1 }}</b>
+                  <span>{{ section.settings.ul_sub_heading1 }}</span>
+                </li>
+                 <li>
+                  <b>{{ section.settings.ul_heading2 }}</b>
+                  <span>{{ section.settings.ul_sub_heading2 }}</span>
+                </li>
+                   <li>
+                  <b>{{ section.settings.ul_heading3 }}</b>
+                  <span>{{ section.settings.ul_sub_heading3 }}</span>
+                </li>
+                   <li>
+                  <b>{{ section.settings.ul_heading4 }}</b>
+                  <span>{{ section.settings.ul_sub_heading4 }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right-div-single-img-colom-cstm  right-class-mobile">
+            <div class="product-foundationa-img">
+              <img class="cstm-with-img" src="{{ section.settings.bannerImage | img_url: 'master' }}" alt="BANNER IMG">
+            </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+"name": " Product Foundational",
+"settings": [
+
+{
+"id": "custom_text_title",
+"type": "text",
+"label": "text"
+},
+{
+"id": "custom_text_title0",
+"type": "text",
+"label": "text-sub-heading"
+},
+{
+"id": "custom_text_title1",
+"type": "html",
+"label": "text1"
+},
+{
+"id": "ul_heading",
+"type": "text",
+"label": "ul_heading"
+},
+{
+"id": "ul_sub_heading",
+"type": "text",
+"label": "ul_sub_heading"
+},
+{
+"id": "ul_heading1",
+"type": "text",
+"label": "ul_heading1"
+},
+{
+"id": "ul_sub_heading1",
+"type": "text",
+"label": "ul_sub_heading1"
+},
+{
+"id": "ul_heading2",
+"type": "text",
+"label": "ul_heading2"
+},
+{
+"id": "ul_sub_heading2",
+"type": "text",
+"label": "ul_sub_heading2"
+},
+{
+"id": "ul_heading3",
+"type": "text",
+"label": "ul_heading3"
+},
+{
+"id": "ul_sub_heading3",
+"type": "text",
+"label": "ul_sub_heading3"
+},
+{
+"id": "ul_heading4",
+"type": "text",
+"label": "ul_heading4"
+},
+{
+"id": "ul_sub_heading4",
+"type": "text",
+"label": "ul_sub_heading4"
+},
+
+{
+"type": "image_picker",
+"id": "bannerImage",
+"label": "Custom  Image"
+}
+],
+
+
+"presets": [
+{
+"name": " Product Foundational"
+}
+]
+}
+{% endschema %}
+
+<style>
+.row-custom {
+    display: flex;
+/*     justify-content: center;
+    align-items: center; */
+}
+  .left-single-img-colom-cstm {
+    width: 50%;    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+  .right-div-single-img-colom-cstm {
+    position: relative;
+    height: 519px;
+  }
+/* .product-foundationa-img img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+} */
+
+  .single-product-foundational-health-section .left-single-img-colom-cstm.margin_space {
+    margin-top: -10px;
+}
+@media screen and (min-width:769px){
+  .left-single-img-colom-cstm.margin_space {
+    margin-left: -55px;
+    margin-right: 55px;
+}
+}
+  @media screen and (max-width:1099px){
+  .product-foundationa-ingo span {
+    font-size: 11px;
+}
+  .left-single-img-colom-cstm.margin_space {
+    margin-left: 0;
+    margin-right: 55px;
+}}
+  @media only screen and (min-width:1199px) and (max-width:1450px) {
+    .left-single-img-colom-cstm.margin_space {
+    margin-left: -25px;
+}
+  }
+
+</style>

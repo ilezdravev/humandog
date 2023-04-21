@@ -1,0 +1,105 @@
+<section class="single-product-box-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <div class="col-11 fullwidth_iconwidth" style="margin: 0 auto;">
+          <div class="row">
+            <div class="col">
+              <div class="single-product-inner-colom shopicon_1">
+                {{ ' Human_Grade_1.svg' | asset_url | img_tag }}
+                <h3>{{ section.settings.heading-title1 }}</h3>
+              </div>
+            </div>  
+            
+            
+            <!-- second row  -->
+            <div class="col">
+              <div class="single-product-inner-colom shopicon_2">
+                 {{ ' Made_in_Vermont.svg' | asset_url | img_tag }}
+                <h3>{{ section.settings.heading-title2 }}</h3>
+              </div>
+            </div> 
+            
+               
+            <!-- second row  -->
+            <div class="col">
+              <div class="single-product-inner-colom shopicon_3">
+                {{ 'no-artificial-flavors_3.svg' | asset_url | img_tag }}
+                <h3>{{ section.settings.heading-title3 }}</h3>
+              </div>
+            </div> 
+            
+               
+            <!-- second row  -->
+            <div class="col">
+              <div class="single-product-inner-colom shopicon_4">
+                {{ 'Hypoallergenic_4.svg' | asset_url | img_tag }}
+                <h3>{{ section.settings.heading-title4 }}</h3>
+              </div>
+            </div> 
+            
+                        <!-- second row  -->
+            <div class="col">
+              <div class="single-product-inner-colom shopicon_5">
+                {{ 'non-gmo_5.svg' | asset_url | img_tag }}
+                <h3>{{ section.settings.heading-title5 }}</h3>
+              </div>
+            </div> 
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "SINGLE PRODUCT BOX",
+    "settings": [
+  {
+      "id": "heading-title1",
+      "type": "text",
+      "label": "heading-title1"
+      },
+ {
+      "id": "heading-title2",
+      "type": "text",
+      "label": "heading-title2"
+      },
+ {
+      "id": "heading-title3",
+      "type": "text",
+      "label": "heading-title3"
+      },
+ {
+      "id": "heading-title4",
+      "type": "text",
+      "label": "heading-title4"
+      },
+ {
+      "id": "heading-title5",
+      "type": "text",
+      "label": "heading-title5"
+      }
+
+ ],
+ "blocks": [
+    {
+      "type": "select",
+      "name": "Add Button",
+      "settings": [
+
+      ]
+    }
+  ],
+
+    "presets": [
+      {
+        "name": "SINGLE PRODUCT BOX"
+      }
+    ]
+  }
+{% endschema %}

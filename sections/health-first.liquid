@@ -1,0 +1,56 @@
+<section class="health-first-section text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-1 col-md-2 col-lg-2 col-xl-2"> &nbsp;</div>
+        <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8 col-xl-8">
+          <div class="health-first-left-colom">
+            <span class="font-italic"> {{ section.settings.custom_heading_title_italic }}</span>  
+              <span> {{ section.settings.custom_heading_title }}</span>  
+            <img class="cstm-with-img" src="{{ section.settings.bannerImage | img_url: 'master' }}" alt="BANNER IMG">
+            <p> {{ section.settings.custom_text_title }}</p>  
+            <p> {{ section.settings.custom_text_title1 }}</p>  
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-1 col-md-2 col-lg-2 col-xl-2"> &nbsp;</div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "HEALTH FIRST ",
+    "settings": [
+{
+      "id": "custom_heading_title_italic",
+      "type": "text",
+      "label": "heading"
+      },
+{
+      "id": "custom_heading_title",
+      "type": "text",
+      "label": "heading"
+      },
+ {
+        "type": "image_picker",
+        "id": "bannerImage",
+        "label": "Custom  Image"
+      },	 
+      
+     {
+      "id": "custom_text_title",
+      "type": "html",
+      "label": "text"
+      },
+   {
+      "id": "custom_text_title1",
+      "type": "html",
+      "label": "text1"
+      }
+    ],
+    "presets": [
+      {
+        "name": "HEALTH FIRST"
+      }
+    ]
+  }
+{% endschema %}

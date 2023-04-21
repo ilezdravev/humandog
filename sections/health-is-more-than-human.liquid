@@ -1,0 +1,91 @@
+<section class="main-health-more-then-human-section desktop-show"  style="background-image:url('{{ section.settings.bg-health-image-banner  | img_url: 'master' }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="health-more-then-colom">
+        <h2> <span> {{ section.settings.custom_text_title }}</span> 
+            <span class="change-heading-font-style"> {{ section.settings.custom_text_title_sub }}</span> 
+            <span> {{ section.settings.custom_text_title_heading }}</span>
+          </h2>
+       		 <a href="{{ section.settings.link }}" class="button">{{ section.settings.linktext }}</a>     
+          
+      </div>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+
+
+<section class="main-health-more-then-human-section mobile-show"  style=" display:none; background-image:url('{{ section.settings.bg-health-image-banner-mobile  | img_url: 'master' }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="health-more-then-colom">
+          <h2> <span> {{ section.settings.custom_text_title }}</span> 
+            <span class="change-heading-font-style"> {{ section.settings.custom_text_title_sub }}</span> 
+            <span> {{ section.settings.custom_text_title_heading }}</span>
+          </h2>
+       		 <a href="{{ section.settings.link }}" class="button">{{ section.settings.linktext }}</a>     
+          
+      </div>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+
+
+
+{% schema %}
+  {
+    "name": "Health is more than human",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg-health-image-banner",
+        "label": "Custom Background Image"
+      },
+   {
+        "type": "image_picker",
+        "id": "bg-health-image-banner-mobile",
+        "label": "Custom Background Image For Mobile"
+      },
+
+
+	 {
+        "id": "custom_text_title",
+        "type": "text",
+        "label": "Text box heading"
+      },
+{
+        "id": "custom_text_title_sub",
+        "type": "text",
+        "label": "Text box heading-style"
+      },
+ {
+        "id": "custom_text_title_heading",
+        "type": "text",
+        "label": "custom_text_title_heading"
+      },
+ {
+      "id": "link",
+      "type": "url",
+      "label": "Button link"
+    },
+    {
+      "id": "linktext",
+      "type": "text",
+      "label": "Button text"
+    }
+ 	
+    ],
+    "presets": [
+      {
+        "name": "Health is more than human"
+      }
+    ]
+  }
+{% endschema %}

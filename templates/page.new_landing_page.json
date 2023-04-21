@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1645785653deb906d4": {
+      "type": "about-us-banner",
+      "settings": {
+        "bg-image-banner-mobile": "shopify:\/\/shop_images\/Header_Image.png",
+        "bg-image-banner": "shopify:\/\/shop_images\/Untitled_design_8_1.png",
+        "custom_text_title": "Effective Pet Health",
+        "custom_text_title1": "is Built on Science"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1645785653deb906d4"
+  ]
+}

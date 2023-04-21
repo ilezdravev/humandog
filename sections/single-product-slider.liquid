@@ -1,0 +1,131 @@
+<section class="single-product-slider-section main-Instagram-feed-section" style="background:#F6FBFE;">
+  <div class="container">
+    <div class="row cstm-colom-row">
+      <h2 class="cstm-heading-font-size"> <div class="snt-m"> {{ section.settings.custom_text_title }} </div>
+        <p class="mt-top"> {{ section.settings.custom_text_title0 }} </p>
+        <p> 
+          <span class="font-wold">{{ section.settings.custom_span_text }} </span>
+          <span  class="font-wold" >{{ section.settings.custom_span_text1 }} </span>
+          <span  class="font-wold">{{ section.settings.custom_span_text2 }} </span>
+
+        </p>
+      </h2>
+    </div>
+    <div class="row">
+      <div class="testimonial-insta owl-carousel owl-theme">
+        {% for block in section.blocks %} 
+        <div class="item">
+          <img src="{{ block.settings.bannerImage | img_url: 'master'  }}">
+          <p><b>{{ block.settings.custom_text_bold }}</b>   
+            {{ block.settings.custom_text_body }} </p>  
+        </div>
+        {% endfor %}
+
+      </div>     
+    </div>
+     <div class="row third-row-colom-cstm">
+       <div class="borders">
+       <span class="logo-icon-colom-product shoplogo1">
+<!--          <img src="{{ section.settings.logo_icon | img_url }}"> -->
+         <img src="https://cdn.shopify.com/s/files/1/0562/5351/3789/files/the_dodo_logo.svg?v=1648509933">
+
+       </span>
+           <span class="logo-icon-colom-product shoplogo2">
+<!--          <img src="{{ section.settings.logo_icon2 | img_url }}">  -->
+         <img src="https://cdn.shopify.com/s/files/1/0562/5351/3789/files/4_new_york_logo.svg?v=1648509933">
+         
+       </span>
+           <span class="logo-icon-colom-product shoplogo3">
+<!--         <img src="{{ section.settings.logo_icon3 | img_url }}"> -->
+        <img src="https://cdn.shopify.com/s/files/1/0562/5351/3789/files/Health_logo.svg?v=1648509933">
+       </span>
+           <span class="logo-icon-colom-product shoplogo4">
+<!--         <img src="{{ section.settings.logo_icon4 | img_url }}"> -->
+               <img src="https://cdn.shopify.com/s/files/1/0562/5351/3789/files/Yahoo___2019_1_-cropped.svg?v=1648513021">
+       </span>
+    </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+"name": "single-product-slider",
+"settings": [
+{
+"id": "custom_text_title",
+"type": "text",
+"label": "Text box heading"
+},
+{
+"id": "custom_text_title0",
+"type": "text",
+"label": "Text box heading"
+},
+{
+"id": "custom_span_text",
+"type": "text",
+"label": "Text"
+},
+{
+"id": "custom_span_text1",
+"type": "text",
+"label": "Text1"
+},
+{
+"id": "custom_span_text2",
+"type": "text",
+"label": "Text2"
+},
+{
+"id": "logo_icon",
+"type": "image_picker",
+"label": "logo Image"
+},
+{
+"id": "logo_icon2",
+"type": "image_picker",
+"label": "logo Image2"
+},
+{
+"id": "logo_icon3",
+"type": "image_picker",
+"label": "logo Image3"
+},
+{
+"id": "logo_icon4",
+"type": "image_picker",
+"label": "logo Image4"
+}
+
+],
+"blocks": [
+{
+"type": "select",
+"name": "Add Button",
+"settings": [
+{
+"id": "bannerImage",
+"type": "image_picker",
+"label": "Banner Image"
+},
+{
+"id": "custom_text_bold",
+"type": "html",
+"label": "Add custom text bold"
+},
+{
+"id": "custom_text_body",
+"type": "html",
+"label": "Add custom text"
+}
+]
+}
+],
+"presets": [
+{
+"name": "single-product-slider"
+}
+]
+}
+{% endschema %}
