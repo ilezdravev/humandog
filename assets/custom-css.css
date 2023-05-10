@@ -5060,3 +5060,27 @@ p.dogisfor {
     display: block !important;
   }
 }
+@font-face {
+  font-family: 'Roc Groteskfa';
+  src: url("https://cdn.shopify.com/s/files/1/0562/5351/3789/files/Kostic_-_Roc_Grotesk_Medium.otf?v=1682101391") format('opentype');
+  font-style: normal;
+  font-size: 500;
+}
+
+.product-label{
+  position: absolute;
+  bottom: 12vh;
+  left: 17%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: rgba(2, 32, 68, 0.7) !important;
+  font-family: 'Roc Groteskfa';
+}
+
+@media(max-width: 1000px){
+  .product-label{
+    display: none;
+  }
+}
